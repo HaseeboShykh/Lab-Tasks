@@ -1,0 +1,20 @@
+Abdul Haseeb (1445132)
+Lab Task 3
+
+
+
+public class Circle extends Shape {
+		
+public int radius;
+
+	public Circle(int rad) {
+		super("Circle");
+		radius=rad;
+	}
+	public double area() {
+		return 3.142*radius*radius;
+	}
+	public double perimeter() {
+		return 2*3.142*radius;
+	}
+}
