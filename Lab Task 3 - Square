@@ -1,0 +1,13 @@
+Abdul Haseeb (1445132)
+Lab Task 3
+
+
+
+public class Square extends Rectangle{
+		
+	public Square(int side){
+			
+		super("Square");
+		height=length=side;
+	}
+}
