@@ -1,0 +1,32 @@
+Abdul Haseeb (1445132)
+Lab Task 4
+
+public class Clock {
+	private Counter hours,mins,secs;
+	public Clock()
+	{
+		hours = new Counter(24);
+		mins= new Counter(60);
+		secs = new Counter(60);
+		
+	}
+	public void tick(){
+		System.out.println(hours.viewcount()+":"+mins.viewcount()+":"+secs.viewcount());
+		secs.increment();
+		if(secs.viewcount()==0){
+			mins.increment();
+			if((secs.viewcount()==0)&&(mins.viewcount()==0))
+					hours.increment();
+			
+		}
+	}
+		public int viewhrs(){
+			return hours.viewcount();
+		}
+		public int viewmins(){
+			return mins.viewcount();
+		}
+		public int viewsecs(){
+			return secs.viewcount();
+		}
+}
