@@ -1,0 +1,29 @@
+Abdul Haseeb (1445132)
+Lab Task 4
+
+public class AlarmClock extends Clock {
+		 public int hrset,minset;
+		 public boolean alarmon;
+			public AlarmClock(){
+			super();
+			alarmon=false;
+			}
+			
+			public void setalarm(int hr,int min)
+			{
+				hrset=hr;minset=min;alarmon=true;
+			}
+			public void tick(){
+				super.tick();
+				if((viewhrs()==hrset)&&(viewmins()==minset)&&alarmon){
+					{
+						System.out.println("ring");
+					}
+				}
+					
+			}
+				
+				
+			
+		}
+
